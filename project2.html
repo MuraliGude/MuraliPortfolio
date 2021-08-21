@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Control of DC Motor Mathematical Modelling and Performance analysis</title>
+    <link rel="stylesheet" href="style_p.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="dot-container">
+            <a href="index.html"><div class="dot" style="background-color:rgb(255, 81, 58);"></div></a>
+            <a href="index.html"><div class="dot" style="background-color:rgb(107, 248, 42);"></div></a>
+            <a href="index.html"><div class="dot" style="background-color:rgb(46, 119, 253);"></div></a>
+        </div>
+    </div>
+
+
+    <div class="text-header">
+        <h2>Position Control of DC Motor Mathematical Modelling and Performance analysis</h2>
+    </div>
+
+    <div class="link"><a href="https://drive.google.com/file/d/1kqkzpaK10Dsjdi9o1ljCrfFZkrOq_rpS/view?usp=sharing">
+        learn More
+    </a></div>
+
+    <div class="s1">
+        <div class="text-content">
+            <div class="introduction">
+                <h2>Introduction : </h2>
+                <p>
+                    There are many different DC motor types in the market
+                    and all with it good and bad attributes. One such bad attribute is the
+                    lag of efficiency. In order to overcome this problem a controller is
+                    introduced to the system. There are also many types of controllers
+                    used in the industry, one such controller is PID controller. PID
+                    controller or proportional–integral–derivative controller is a
+                    generic control loop feedback mechanism widely used in industrial
+                    control systems. A PID controller attempts to correct the error
+                    between a measured process variable and a desired set point by
+                    calculating and then outputting a corrective action that can adjust
+                    the process accordingly. So by integrating the PID controller to the
+                    DC motor we will be able to correct the error made by the DC motor
+                    and control the position of the motor to the desired speed or point.
+                </p>
+            </div>
+
+            <div class="block">
+                <h2>System Block Diagram : </h2>
+                <div class="image_block">
+                    <img src="images/proj_2/block.JPG" alt="">
+                </div>
+            </div>
+
+            <div class="block">
+                <h2>DC Motor Block Diagram : </h2>
+                <div class="image_block">
+                    <img src="images/proj_2/dc_block.JPG" alt="">
+                    <img src="images/proj_2/dc_tf.JPG" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="s2">
+        <div class="text-content">
+            <div class="pid">
+                <h2>PID Controller : </h2>
+                <p>
+                    Proportional-integral-derivative (PID) controllers [2] are
+widely used in industrial control systems because of the reduced
+number of parameters to be tuned. They provide control signals that
+are proportional to the error between the reference signal and the
+actual output (proportional action), to the integral of the error
+(integral action), and to the derivative of the error (derivative
+action), namely Where u(t) and e(t) denote the control and the error
+signals respectively, and Kp, 'Ii and Td are the parameters to be
+tuned. The corresponding transfer function is given as These
+functions have been enough to the most control processes. Because
+the structure of PID controller is simple, it is the most extensive
+control method to be used in industry so far. The PID controller is
+mainly to adjust an appropriate proportional gain ( K p ), integral
+gain (K I ), and differential gain (KD) to achieve the optimal control
+performance. The PID controller system block diagram of this paper
+is shown in Figure 7and the simulink block diagram for the system
+shown in figure 6 [5]and the block diagram result shows in figure
+16.Transfer function can also be expressed as[1] The main features
+of PID controllers are the capacity to eliminate steady-state error of
+the response to a step reference signal (because of integral action)
+and the ability to anticipate output changes (when derivative action
+is employed Tuning the PID controller achieved experimental on the
+plant .a lot of experiment has done till getting the best result
+for Kp , Kd and Ki.
+
+                </p>
+            </div>
+
+            <div class="block">
+                <h2>PID Block Diagram : </h2>
+                <div class="image_block">
+                    <img src="images/proj_2/pid_block.JPG" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

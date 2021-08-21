@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Container</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="dot-container">
+            <a href="index.html"><div class="dot" style="background-color:rgb(255, 81, 58);"></div></a>
+            <a href="index.html"><div class="dot" style="background-color:rgb(107, 248, 42);"></div></a>
+            <a href="index.html"><div class="dot" style="background-color:rgb(46, 119, 253);"></div></a>
+        </div>
+        <h2>Smart Container</h2>
+    </div>
+
+    <div class="s1">
+        <div class="text-content">
+            <h2>Abstract : </h2>
+            <p>
+                The main objective of this project is to develop a
+                Smart Container Level monitoring system using an
+                UltraSonic sensor [HCSR04] and NodeMcu ESP8266 board
+                with Wi-Fi being remotely controlled by any smart phone
+                for tracking the level of container stored to assist in inventory management without
+                human interaction. The intelligent container is an application
+                of Internet of Things (IoT) in various fields ranginf from kitchen automation to industrial container management. This
+                project incorporates an ultrasonic sensor that uses pulse echo
+                method to monitor and sense the level of commodities 
+                kept within storage containers. Pulse echo method
+                determines the difference between an empty container and a
+                particular level of completion based on frequency values
+                taken as threshold values. A NodeMcu ESP8266
+                microcontroller monitors the level of commodity with the
+                help of sensors and assists in tracking the quantity of
+                commodity.The NodeMcu ESP8266 microcontroller sends
+                the data to AWS IOT Core via MQTT protocol and AWS
+                run analytics on the received data and notifies the user using AWS SNS service. The smart and intelligent container provides
+                personal assistance in monitoring the level of container without human interaction from any place at any time.
+            </p>
+            
+            <div class="link"><a href="https://drive.google.com/file/d/1uDctlG8WnhlOmlgDAD2lhdYJ6CH6KxV5/view?usp=sharing">
+                learn More
+            </a></div>
+        </div>
+    </div>
+
+    <div class="smart-content">
+        <div class="con">
+            <div class="level">
+                <input type="range" min="0" max="100" value="50" class ="slide" orient="vertical" id ="slide">
+            </div>
+            <div class="cont">
+                <div class="slider" id ="level-slider"></div>
+            </div>
+            <div class="sen">Sensor<div id="levelsen">Level : </div> </div>
+            <div class="node">NodeMcu <br> ESP-8266</div>
+        </div>
+        <div class="hr-loading-dots1" id="hr-loading-dots1" >
+            <div class="ldot"></div>
+            <div class="ldot"></div>
+            <div class="ldot"></div>
+            <div class="ldot"></div>
+            <div class="ldot"></div>
+            <div class="ldot"></div>
+            <div class="ldot"></div>
+            <div class="ldot"></div>
+            <div class="ldot"></div>
+            <div class="ldot"></div>
+        </div>
+        <div class="cloud">
+            <div class="img"><img src="images/aws.png" alt=""></div>
+            <div class="rules-contain">
+                <div class="rules" id ="rules">
+                    <img src="images/rules1.png" alt="">
+                </div>
+                <p><u>Rule :</u> if Level &gt; 75 % then notify</p>
+            </div>
+        </div>
+        <div class="vr-loading-dots1" id="vr-loading-dots1">
+            <div class="ldot"></div>
+            <div class="ldot"></div>
+            <div class="ldot"></div>
+            <div class="ldot"></div>
+            <div class="ldot"></div>
+            <div class="ldot"></div>
+            <div class="ldot"></div>
+            <div class="ldot"></div>
+            <div class="ldot"></div>
+            <div class="ldot"></div>
+        </div>
+        <div class="notif">
+            <div class="phone"><img src="images/smart_phone0.png" alt="">
+            <div class="note" id ="note">Container Empty</div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+
+    
+    <script src="smart.js"></script>
+</body>
+</html>

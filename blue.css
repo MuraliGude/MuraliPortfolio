@@ -1,0 +1,12 @@
+:root{
+    --primary-color:rgb(2, 0, 94);
+    --sec-color:rgb(176, 204, 255);
+    --light:rgb(240, 240, 240);
+    --hightlight:rgb(255, 163, 25);
+    --dark:rgb(43, 43, 43);
+
+    --pri-bgColor:rgb(44, 69, 211);
+    --sec-bgColor:rgb(151, 199, 255);
+
+    --border-color:rgb(234, 254, 255);
+}
